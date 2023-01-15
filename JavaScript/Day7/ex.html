@@ -1,0 +1,17 @@
+<p id="demo" name="ab"></p>
+
+
+<script>
+var Person={
+    firstname:"Parvej",
+    lastname:"mulani",
+
+};
+ 
+ Person.name=function(){
+    return this.firstname+" "+this.lastname;
+ };
+ console.log(typeof(Person.name))
+ //document.getElementById("demo").innerHTML="Name is "+Person.name()
+ document.getElementsByName("ab").innerHTML="Name is "+Person.name()
+</script>

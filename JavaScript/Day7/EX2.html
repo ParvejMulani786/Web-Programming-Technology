@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $(".class2").click(function(){
+
+                let v=$(".class1").val()
+                $("#grocery").append(`<li>${v}</li>`)
+            })
+        })
+
+       
+    </script>
+</head>
+<body>
+    <input type="text" class="class1">
+    <input type="button" class="class2" value="Add">
+
+    <div>
+        <ol id="grocery"></ol>
+    </div>
+</body>
+</html>
+
+
+ 

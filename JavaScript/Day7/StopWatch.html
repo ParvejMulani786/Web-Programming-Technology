@@ -1,0 +1,45 @@
+<htm>
+    <head>
+        <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        </head>
+    
+        <script>
+            $(document).ready(function(){
+
+                var timerid =0
+                $('#b1').click(()=>{
+                    var x=0
+                    timerid= setInterval(()=>{
+                    x = x + 1
+                    $('#timervalue').text(x)
+                },1000)
+
+                })//end of b1 click
+
+                $('#b2').click(()=>{
+                    clearInterval(timerid)
+
+                })//end of b2 click
+
+
+            })//end of ready
+            
+        </script>
+    </head>
+    
+    <body>
+    <button id="b1">start</button>
+    <button id="b2">stop</button>
+    <pre>
+    
+    Timer :
+    
+    </pre>
+    <span id="timervalue"></span>
+    
+    </body>
+    
+    </htm>
+
+    
